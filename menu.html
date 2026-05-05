@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,475 +15,602 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <style>
-      .menu-hero {
-        padding: 160px 0 80px 0;
-        background-color: #fff8e1;
-        text-align: center;
-      }
-      .menu-page-title {
-        font-family: "Playfair Display", serif;
-        font-size: 3.5rem;
-        font-weight: 900;
-        color: #333;
-        margin-bottom: 20px;
-      }
-    </style>
   </head>
   <body>
-    <!-- Navbar (Simplified/Consistent) -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="./Images/logo.png" alt="Shree Ram Tamtamwala Logo" height="50" />
-          <span class="ms-2">SHREE RAM TAMTAMWALA</span>
+          <img src="./Images/logo.png" alt="Shree Ram Tamtamwala Logo" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
             <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html#gallery">Gallery</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="farsan.html">Farsan</a></li>
+            <li class="nav-item"><a class="nav-link" href="manufacturing.html">Manufacturing</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="press.html">Press</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Menu Hero -->
-    <section class="menu-hero">
-      <div class="container">
-        <h5 class="about-pretitle mb-3" style="margin: 0 auto">Full Collection</h5>
-        <h1 class="menu-page-title">The Complete Farshan Menu</h1>
+    <!-- Page Hero -->
+    <header class="page-hero">
+      <div class="page-hero-content container">
+        <h5 class="page-hero-subtitle">The Original List</h5>
+        <h1 class="page-hero-title">Our Menu</h1>
         <div class="hero-divider mx-auto"></div>
-        <p class="lead text-muted mt-4">Exploring 75 years of authentic flavors, one bite at a time.</p>
       </div>
-    </section>
+    </header>
 
-    <!-- Full Menu Section -->
-    <section class="product-section pt-0">
-      <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
-          <!-- All Items -->
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo.jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Singbhajiya</h5>
-                <p class="product-card-text">Delicious Singbhajiya, perfect for any occasion.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (1).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Mix Kathod</h5>
-                <p class="product-card-text">A blend of flavors in every bite, Mix Kathod is a favorite.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (2).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Tikhi Sev</h5>
-                <p class="product-card-text">Tangy and spicy Tikhi Sev adds a zesty twist to your snacking.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (3).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Jada mathiya</h5>
-                <p class="product-card-text">Enjoy the crispy goodness of Jada Mathiya.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (4).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Chana dal</h5>
-                <p class="product-card-text">Traditional Chana Dal offers a hearty crunch.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (5).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Limbu-Mari Sev</h5>
-                <p class="product-card-text">Tangy Limbu-Mari Sev combines zesty lime with crunchy Sev.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (6).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Lasan Bhakharvadi</h5>
-                <p class="product-card-text">Garlic-infused Lasan Bhakharvadi packs a punch of flavor.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (7).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Mini Bhakarvadi</h5>
-                <p class="product-card-text">Bite-sized Mini Bhakharvadi delivers the same delicious taste.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (8).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Butter Bhakharvadi</h5>
-                <p class="product-card-text">Rich and buttery, Butter Bhakharvadi melts in your mouth.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (9).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Mari Gathiya</h5>
-                <p class="product-card-text">Crispy Mari Gathiya offers a delightful crunch.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (10).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Moong Dal</h5>
-                <p class="product-card-text">Protein-rich Moong Dal is crispy and flavorful.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (11).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Bhavnagari Gathiya</h5>
-                <p class="product-card-text">Spicy Bhavnagari Gathiya provides a bold flavor experience.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (13).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Mix TamTam</h5>
-                <p class="product-card-text">Mixed Tamtam offers a variety of textures and flavors.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (14).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Special Khakhara</h5>
-                <p class="product-card-text">Special Khakhara is crispy and seasoned to perfection.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (15).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Nylon Papdi</h5>
-                <p class="product-card-text">Light and crispy Nylon Papdi melts in your mouth.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (16).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Masala Chakri</h5>
-                <p class="product-card-text">Spicy Masala Chakri features a blend of spices.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (17).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Chana Chor Garam</h5>
-                <p class="product-card-text">Sweet and spicy Chana Chor Garam is a popular street snack.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (18).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Banana Waffers</h5>
-                <p class="product-card-text">Crunchy Banana Wafers offer a sweet and fruity flavor.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (19).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Sadi Waffers</h5>
-                <p class="product-card-text">Simple and satisfying, Plain Wafers are lightly salted.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (20).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Butter Chakri</h5>
-                <p class="product-card-text">Rich and buttery, a decadent treat.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (21).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Madrasi Waffers</h5>
-                <p class="product-card-text">Taste the regional flavors with Madrasi Wafers.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (22).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Farsi Puri</h5>
-                <p class="product-card-text">Crispy Farsi Puri, a perfect snack for any occasion.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (23).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Malbari Sev</h5>
-                <p class="product-card-text">Regional delight, Malbari Sev offers a unique taste.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (24).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Methi Puri</h5>
-                <p class="product-card-text">Enjoy the flavorful crunch of Methi Puri.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (25).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Bhadaran Moong</h5>
-                <p class="product-card-text">Bhadaran Moong, a traditional favorite snack.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (26).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Lilo-Suko Chevado</h5>
-                <p class="product-card-text">Sweet and salty mix, Lilo-Suko Chevado is irresistible.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (27).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Dry Kachoti & Samosa</h5>
-                <p class="product-card-text">Savory Dry Kachori & Samosa for a satisfying snack.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (28).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Dalmooth</h5>
-                <p class="product-card-text">Crunchy Dalmooth, perfect for munching anytime.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (29).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Gehu Chakri</h5>
-                <p class="product-card-text">Enjoy the wholesome goodness of Gehu Chakri.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (30).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Ratlami Sev</h5>
-                <p class="product-card-text">Spicy Ratlami Sev for those who love heat.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (31).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Nadiadi Mix</h5>
-                <p class="product-card-text">Nadiadi Mix offers a delightful blend of flavors.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="product-card">
-              <div class="product-image-wrapper">
-                <img src="./Images/photo (32).jpg" class="product-img" alt="Product Image" />
-              </div>
-              <div class="product-content">
-                <h5 class="product-card-title">Solapuri Chevado</h5>
-                <p class="product-card-text">Taste the regional specialty with Solapuri Chevado.</p>
-              </div>
-            </div>
-          </div>
+    <!-- Menu Filter Wrapper -->
+    <div class="menu-filter-wrapper">
+      <div class="container text-center">
+        <div class="d-flex justify-content-center flex-wrap gap-2">
+          <button class="btn btn-filter active" data-filter="all">All Specialties</button>
+          <button class="btn btn-filter" data-filter="signature">Signature Tamtam</button>
+          <button class="btn btn-filter" data-filter="farsan">Classic Farsan</button>
+          <button class="btn btn-filter" data-filter="mixtures">Heritage Mixtures</button>
         </div>
       </div>
-    </section>
-
-    <!-- Footer -->
-    <div class="footer-custom">
-      <footer class="container py-5">
-        <div class="row">
-          <div class="col-12 col-md">
-            <div class="footer-logo mb-2">
-              <img src="./Images/logo.png" alt="Shree Ram Tamtamwala Logo" height="50" />
-            </div>
-            <small class="d-block mb-3 text-body-secondary">&copy; 1947–2024 Shree Ram Tamtamwala</small>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Our Story</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-secondary" href="index.html#about">The Legacy</a></li>
-              <li><a class="text-secondary" href="index.html#gallery">Visual Gallery</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Connect</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-secondary" href="index.html#contact">Contact Us</a></li>
-              <li><a class="text-secondary" href="#">Location</a></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
     </div>
+
+    <!-- Product Grid Section -->
+    <section class="menu-section pb-5">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" id="menu-grid">
+          
+          <!-- SIGNATURE -->
+          <div class="col menu-item" data-category="signature">
+            <div class="product-card premium">
+              <div class="product-badge">Legendary</div>
+              <div class="product-image-wrapper">
+                <img src="./Images/tamtam-main.png" class="product-img" alt="Mix Tamtam" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Signature</span>
+                <h5 class="product-title">Mix Tamtam (with Veg & Fruit)</h5>
+                <p class="product-desc">Our world-famous specialty featuring a unique blend of fresh ingredients.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="signature">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/tamtam.jpg" class="product-img" alt="Mix Tamtam" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Signature</span>
+                <h5 class="product-title">Classic Mix Tamtam</h5>
+                <p class="product-desc">The original 1947 recipe that made us a household name.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FARSAN -->
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo.jpg" class="product-img" alt="Singbhajiya" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Singbhajiya</h5>
+                <p class="product-desc">Crispy, spiced peanuts hand-roasted for the perfect crunch.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (1).jpg" class="product-img" alt="Mix Kathod" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Mix Kathod</h5>
+                <p class="product-desc">A protein-rich blend of heritage pulses and spices.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (2).jpg" class="product-img" alt="Tikhi Sev" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Tikhi Sev</h5>
+                <p class="product-desc">Sharp and spicy strands of traditional gram flour sev.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (3).jpg" class="product-img" alt="Jada Mathiya" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Jada Mathiya</h5>
+                <p class="product-desc">Classic thick mathiya with an authentic heritage taste.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (4).jpg" class="product-img" alt="Chana Dal" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Chana Dal</h5>
+                <p class="product-desc">Crunchy and savory roasted lentils with a zesty kick.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (5).jpg" class="product-img" alt="Limbu-Mari Sev" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Limbu-Mari Sev</h5>
+                <p class="product-desc">A refreshing blend of tangy lemon and bold black pepper.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (30).jpg" class="product-img" alt="Ratlami Sev" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Ratlami Sev</h5>
+                <p class="product-desc">The iconic spicy sev with a punch of cloves and pepper.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (6).jpg" class="product-img" alt="Lasan Bhakharvadi" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Lasan Bhakharvadi</h5>
+                <p class="product-desc">Garlic-infused savory rolls with a heritage spice center.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (7).jpg" class="product-img" alt="Mini Bhakarvadi" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Mini Bhakarvadi</h5>
+                <p class="product-desc">Bite-sized versions of our legendary savory rolls.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/tikha-gatiya.jpg" class="product-img" alt="Tikha Gathiya" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Tikha Gathiya</h5>
+                <p class="product-desc">Spicy and soft gathiya made from premium gram flour.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (8).jpg" class="product-img" alt="Butter Bhakharvadi" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Butter Bhakharvadi</h5>
+                <p class="product-desc">Rich and flaky bhakarvadi with a buttery finish.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (9).jpg" class="product-img" alt="Mari Gathiya" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Mari Gathiya</h5>
+                <p class="product-desc">Authentic gathiya with a strong hit of black pepper.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (10).jpg" class="product-img" alt="Moong Dal" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Moong Dal</h5>
+                <p class="product-desc">Lightly salted and perfectly fried moong beans.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="mixtures">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (26).jpg" class="product-img" alt="Chevado" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Mixture</span>
+                <h5 class="product-title">Lilo Suko Chevado</h5>
+                <p class="product-desc">The perfect sweet and salty mix of textures and flavors.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (14).jpg" class="product-img" alt="Khakhara" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Special Khakhara</h5>
+                <p class="product-desc">Paper-thin, hand-pressed roasted wheat crisps.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (13).jpg" class="product-img" alt="Gathiya" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Bhavnagari Gathiya</h5>
+                <p class="product-desc">Traditional Bhavnagari style soft and airy gathiya.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (17).jpg" class="product-img" alt="Chakri" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Masala Chakri</h5>
+                <p class="product-desc">Spiral crisps with a bold blend of traditional spices.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (29).jpg" class="product-img" alt="Gehu Chakri" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Gehu Chakri</h5>
+                <p class="product-desc">Wholesome wheat spirals, roasted for health and taste.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (15).jpg" class="product-img" alt="Papdi" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Nylon Papdi</h5>
+                <p class="product-desc">Incredibly light and crunchy gram flour flakes.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="mixtures">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (18).jpg" class="product-img" alt="Waffers" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Mixture</span>
+                <h5 class="product-title">Banana Waffers</h5>
+                <p class="product-desc">Crispy banana slices with a hint of salt and spices.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="mixtures">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (19).jpg" class="product-img" alt="Waffers" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Mixture</span>
+                <h5 class="product-title">Madrasi Waffers</h5>
+                <p class="product-desc">Extra thin and crispy wafers with a unique southern twist.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (23).jpg" class="product-img" alt="Chana Chor" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Chana Chor Garam</h5>
+                <p class="product-desc">Flattened and spiced black gram, a popular heritage snack.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (22).jpg" class="product-img" alt="Puri" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Farsi Puri</h5>
+                <p class="product-desc">Crispy and flaky puris made with pure heritage recipes.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (20).jpg" class="product-img" alt="Chakri" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Butter Chakri</h5>
+                <p class="product-desc">Meltingly soft spirals with a rich buttery flavor.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (24).jpg" class="product-img" alt="Puri" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Methi Puri</h5>
+                <p class="product-desc">Savory puris infused with the aroma of dried fenugreek.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (25).jpg" class="product-img" alt="Moong" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Bhadaran Moong</h5>
+                <p class="product-desc">Famous specialty from Bhadaran, fried to perfection.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (21).jpg" class="product-img" alt="Sev" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Malbari Sev</h5>
+                <p class="product-desc">A unique regional sev with a distinct aromatic profile.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (27).jpg" class="product-img" alt="Samosa" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Dry Samosa</h5>
+                <p class="product-desc">Crispy mini samosas with a long-lasting savory filling.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (28).jpg" class="product-img" alt="Dalmooth" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Dalmooth</h5>
+                <p class="product-desc">Traditional crunchy mix of lentils and fine sev.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="farsan">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (27).jpg" class="product-img" alt="Kachori" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Farsan</span>
+                <h5 class="product-title">Dry Kachori</h5>
+                <p class="product-desc">Stuffed heritage crisps with a blend of sweet and spicy.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="mixtures">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (31).jpg" class="product-img" alt="Mix" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Mixture</span>
+                <h5 class="product-title">Nadiadi Mix</h5>
+                <p class="product-desc">Famous mixture from Nadiad, perfectly balanced flavors.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col menu-item" data-category="mixtures">
+            <div class="product-card">
+              <div class="product-image-wrapper">
+                <img src="./Images/photo (32).jpg" class="product-img" alt="Chevado" />
+              </div>
+              <div class="product-content">
+                <span class="product-category">Mixture</span>
+                <h5 class="product-title">Solapuri Chevado</h5>
+                <p class="product-desc">Authentic Solapuri recipe with a bold, nutty crunch.</p>
+                <div class="product-meta"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Luxury Heritage Footer -->
+    <footer class="footer-custom">
+      <div class="container">
+        <div class="row gy-5">
+          <!-- Logo & Mission -->
+          <div class="col-lg-4 col-md-12 text-center text-lg-start">
+            <div class="footer-logo">
+              <img src="./Images/logo.png" alt="Shree Ram Tamtamwala Logo" />
+            </div>
+            <p class="text-muted small pe-lg-5 mt-3">
+              Preserving the authentic flavors of Vadodara since 1947. A 75-year
+              legacy of handcrafted excellence, purity, and culinary tradition.
+            </p>
+            <p class="text-muted small mt-4 mb-0">
+              © 1947–2024 Shree Ram Tamtamwala.<br />All rights reserved.
+            </p>
+          </div>
+
+          <!-- Navigation -->
+          <div class="col-lg-2 col-6">
+            <h6 class="text-uppercase fw-bold ls-2">The Legacy</h6>
+            <ul class="list-unstyled small">
+              <li class="mb-2"><a href="about.html" class="text-decoration-none">Our Story</a></li>
+              <li class="mb-2"><a href="gallery.html" class="text-decoration-none">Visual Gallery</a></li>
+              <li class="mb-2"><a href="manufacturing.html" class="text-decoration-none">Craftsmanship</a></li>
+              <li class="mb-2"><a href="press.html" class="text-decoration-none">Media Archive</a></li>
+            </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-2 col-6">
+            <h6 class="text-uppercase fw-bold ls-2">Experience</h6>
+            <ul class="list-unstyled small">
+              <li class="mb-2"><a href="farsan.html" class="text-decoration-none">Farsan Range</a></li>
+              <li class="mb-2"><a href="menu.html" class="text-decoration-none">Full Menu</a></li>
+              <li class="nav-item"><a class="text-decoration-none" href="contact.html">Visit Us</a></li>
+              <li class="mb-2"><a href="#" class="text-decoration-none">Order Online</a></li>
+            </ul>
+          </div>
+
+          <!-- Socials -->
+          <div class="col-lg-4 col-md-12 text-center text-lg-end">
+            <h6 class="text-uppercase fw-bold ls-2">Connect With Us</h6>
+            <div class="d-flex justify-content-center justify-content-lg-end gap-4 mb-4 mt-3">
+              <a href="#" class="text-decoration-none small">Instagram</a>
+              <a href="#" class="text-decoration-none small">Facebook</a>
+              <a href="#" class="text-decoration-none small">WhatsApp</a>
+            </div>
+            <p class="text-muted small mb-0">"Designed for a Heritage of Taste."</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

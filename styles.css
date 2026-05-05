@@ -1,0 +1,321 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar-custom {
+    background-color: transparent;
+    font-size: larger;
+}
+
+.navbar.scrolled {
+    background-color: #d32f2f;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #ffffff;
+}
+
+.navbar-custom .nav-link:hover {
+    color: black;
+    background-color: #fbc02d;
+    border-radius: 25px;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+    margin-right: 10px;
+}
+
+.hero {
+    position: relative;
+    background-image: url("./Images/bg-Photoroom.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(121, 85, 72, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #d32f2f;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.cta-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.cta-button a:hover {
+    color: #ffa000;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-text p {
+        margin-bottom: 20px;
+    }
+}
+
+.about-section {
+    background-color: #fff8e1;
+    padding: 80px 0;
+    text-align: justify;
+    color: #795548;
+}
+
+.about-section h2 {
+    margin-bottom: 40px;
+}
+
+.about-section .about-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.about-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.product-section {
+    padding: 80px 0;
+    background-color: var(--bg-color);
+    text-align: center;
+    color: var(--text-color);
+    background-color: #fff8e1;
+}
+
+.product-section h2 {
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.card {
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+a {
+    color: #388e3c;
+}
+
+a:hover {
+    color: #1b5e20;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+    color: #795548;
+    background-color: #fff8e1;
+}
+
+.form-control {
+    background-color: #ffffff;
+    color: #795548;
+    border-color: #fbc02d;
+}
+
+.form-control:focus {
+    background-color: #ffffff;
+    border-color: #ffa000;
+    color: #795548;
+}
+
+.btn-primary {
+    background-color: #fbc02d;
+    border-color: #fbc02d;
+    color: #795548;
+}
+
+.btn-primary:hover {
+    background-color: #ffd54f;
+    border-color: #ffd54f;
+}
+
+.form-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.carousel-box {
+    border: 1px solid gold;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 90%;
+    background-color: #fff8e1;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 32px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    position: relative;
+}
+
+#gallery {
+    background-color: #fff8e1;
+}
+
+.carousel-item {
+    height: 70vh;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+footer {
+    background-color: #d32f2f;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+footer a {
+    color: #fbc02d;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-custom {
+    background-color: #d32f2f;
+}
+
+.custom-image {
+    width: 700px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.animated-heading {
+    position: relative;
+    overflow: hidden;
+}
+
+.animated-heading span {
+    display: inline-block;
+    visibility: hidden;
+}
+
+.animated-heading::before {
+    content: "Welcome to Shri Ram Tamtamwala";
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: text-change 5s infinite;
+}
+
+@keyframes text-change {
+    50% {
+        content: "We Do not Have Any Other Branch";
+    }
+}

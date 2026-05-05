@@ -573,32 +573,133 @@ body {
 }
 
 .product-section {
-  padding: 100px 0;
+  padding: 80px 0;
   background-color: #fff8e1;
-  text-align: center;
 }
 
-.product-section h2 {
-  margin-bottom: 40px;
-  color: #d32f2f; /* Brand Red */
+.product-card {
+  background: white;
+  border-radius: 20px;
+  border: 1px solid rgba(251, 192, 45, 0.2);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.card {
-  border: 1px solid #cccccc;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
+.product-card:hover {
   transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(211, 47, 47, 0.1);
+  border-color: #fbc02d;
 }
 
-.card-img-top {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  max-height: 200px;
+.product-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.1);
+}
+
+.product-content {
+  padding: 25px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.product-card-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* Integrated Farshan Bento Grid */
+.farshan-bento {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 60px auto 0 auto;
+}
+
+.farshan-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(251, 192, 45, 0.1);
+}
+
+.farshan-text-card {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: #fff8e1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgba(211, 47, 47, 0.1);
+}
+
+.farshan-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.farshan-item:hover .farshan-img {
+  transform: scale(1.1);
+}
+
+.farshan-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 60%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 25px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.farshan-item:hover .farshan-overlay {
+  opacity: 1;
+}
+
+.farshan-item-wide { grid-column: span 2; }
+
+@media (max-width: 991px) {
+  .farshan-bento {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 250px;
+  }
+  .farshan-text-card {
+    grid-column: span 2;
+  }
 }
 
 .card-body {

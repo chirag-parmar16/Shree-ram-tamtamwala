@@ -84,3 +84,12 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener('scroll', revealOnScroll);
   revealOnScroll(); // Trigger once on load
 });
+
+// Dynamic Year Logic
+document.addEventListener("DOMContentLoaded", () => {
+  const yearElements = document.querySelectorAll(".current-year");
+  const currentYear = new Date().getFullYear();
+  yearElements.forEach((el) => {
+    el.textContent = currentYear;
+  });
+});

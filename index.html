@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <!--navar-->
+        <!--navbar-->
         <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -32,7 +32,7 @@
                             <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#galary">Gallery</a>
+                            <a class="nav-link" href="#gallery">Gallery</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#farshan">Farshan</a>
@@ -46,32 +46,41 @@
         </nav>
         <!--hero section-->
         <div class="hero">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="animated-heading"><span>Welcome to Shri Ram Tamtamwala</span></h1>
-                    <p>Experience the authentic taste of tradition with our wide range of traditional snacks and sweets, crafted with love and the finest ingredients.</p>
-                    <button class="cta-button">Explore our product</button>
-                </div>
-                <div class="hero-image">
-                    <div id="carouselExampleRide" class="carousel slide carousel-fade" data-bs-ride="true">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active custom-image">
-                                <img src="./Images/tamtam.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item custom-image">
-                                <img src="./Images/tamtam-main-removebg-preview.png" class="d-block w-100" alt="...">
+            <div class="container-fluid hero-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 hero-text-col">
+                        <div class="hero-content-card">
+                            <h1 class="hero-title">
+                                <span class="brand-name">Shri Ram Tamtamwala</span>
+                                <span class="hero-subtitle animated-subtitle">Experience the Tradition</span>
+                            </h1>
+                            <div class="hero-divider"></div>
+                            <p class="hero-description">
+                                75 years of culinary heritage. Experience the authentic taste of tradition with our wide range of handcrafted snacks and sweets.
+                            </p>
+                            <div class="hero-cta-group">
+                                <a href="#farshan" class="btn btn-primary hero-btn">Explore Products</a>
+                                <a href="#about" class="btn btn-outline-light hero-btn-secondary">Our Story</a>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                    </div>
+                    <div class="col-lg-6 hero-image-col">
+                        <div class="hero-image-wrapper">
+                            <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./Images/tamtam.png" class="img-fluid" alt="Tamtam">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./Images/tamtam-main-removebg-preview.png" class="img-fluid" alt="Tamtam Main">
+                                    </div>
+                                </div>
+                                <div class="carousel-indicators-custom">
+                                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -117,12 +126,12 @@
         </div>
         <hr>
         <!-- Gallery -->
-        <div class="p-5 mb-4 bg-body-tertiary rounded-3" id="galary">
-        <section id="galary">
-            <div class="galary">
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3" id="gallery">
+        <section>
+            <div class="gallery-container">
                 <h2>Gallery</h2>
                 <div class="carousel-box ">
-                    <section id="carousel" class="carousel slide carousel-fade " data-bs-ride="carousel">
+                    <section id="galleryCarousel" class="carousel slide carousel-fade " data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="./Images/galary1.jpg" class="d-block w-100" alt="Carousel Image 1">
@@ -137,12 +146,12 @@
                                 <img src="./Images/galary4.jpg" class="d-block w-100" alt="Carousel Image 4">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
+                        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel"
+                        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel"
                             data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>

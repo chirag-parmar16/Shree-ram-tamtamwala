@@ -1,50 +1,145 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: #f8f9fa;
 }
 
+/* Navbar Redesign */
 .navbar-custom {
-    background-color: transparent;
-    font-size: larger;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.navbar.scrolled {
-    background-color: #d32f2f;
-    transition: background-color 0.3s ease;
+.navbar-custom.scrolled {
+    background-color: #d32f2f; /* Exact Brand Red */
+    margin: 10px 20px;
+    padding: 8px 0;
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid #fbc02d; /* Solid Gold accent */
+    width: calc(100% - 40px);
 }
 
-.navbar-custom .navbar-brand,
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff !important;
+    transition: all 0.3s ease;
+}
+
+.navbar-custom .navbar-brand:hover {
+    color: #fbc02d !important;
+    text-shadow: 0 0 10px rgba(251, 192, 45, 0.3);
+}
+
+
+.navbar-brand img {
+    height: 45px;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.2));
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.1) rotate(5deg);
+}
+
 .navbar-custom .nav-link {
-    color: #ffffff;
+    color: #ffffff !important;
+    font-weight: 500;
+    margin: 0 10px;
+    position: relative;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+}
+
+.navbar-custom .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #fbc02d;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar-custom .nav-link:hover::after {
+    width: 80%;
 }
 
 .navbar-custom .nav-link:hover {
-    color: black;
-    background-color: #fbc02d;
-    border-radius: 25px;
+    color: #fbc02d !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
 }
 
-.navbar-brand img {
-    max-height: 50px;
-    margin-right: 10px;
+/* Fix for mobile menu */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: #d32f2f; /* Solid Brand Red */
+        margin-top: 15px;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        border: 1px solid #fbc02d;
+    }
+    
+    .navbar-custom.scrolled .navbar-collapse {
+        background-color: #d32f2f;
+    }
+
+    .nav-link {
+        padding: 12px 20px !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-link:last-child {
+        border-bottom: none;
+    }
 }
+
+.navbar-toggler {
+    border: none;
+    padding: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
 
 .hero {
     position: relative;
     background-image: url("./Images/bg-Photoroom.png");
     background-size: cover;
     background-position: center;
-    color: white;
-    padding: 100px 0;
-    text-align: center;
+    background-attachment: fixed;
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    overflow: hidden;
+    padding: 120px 0 60px 0;
 }
 
 .hero::before {
@@ -54,79 +149,216 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(121, 85, 72, 0.5);
+    background: radial-gradient(circle at 30% 50%, rgba(121, 85, 72, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%);
     z-index: 1;
 }
 
-.hero-content {
+.hero-container {
     position: relative;
     z-index: 2;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0 5%;
 }
 
-.hero-text {
-    flex: 1;
-    text-align: left;
-    padding: 20px;
+.hero-content-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+    animation: fadeInUp 1s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 10;
 }
 
-.hero-text h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-.hero-text p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-}
-
-.cta-button {
-    background-color: #d32f2f;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-}
-
-.cta-button a {
-    text-decoration: none;
-    color: white;
-}
-
-.cta-button a:hover {
-    color: #ffa000;
-}
-
-.hero-image {
-    flex: 1;
-    text-align: center;
-}
-
-.hero-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-@media (max-width: 768px) {
-    .hero-content {
-        flex-direction: column;
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
     }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-    .hero-text,
-    .hero-image {
-        width: 100%;
+.hero-title {
+    margin-bottom: 25px;
+}
+
+.brand-name {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    display: block;
+    font-size: 1.5rem;
+    color: #fbc02d; /* Brand Gold */
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.hero-divider {
+    width: 80px;
+    height: 4px;
+    background: #d32f2f; /* Brand Red */
+    margin: 30px 0;
+    border-radius: 2px;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.hero-cta-group {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-btn {
+    background-color: #d32f2f !important;
+    border-color: #d32f2f !important;
+    padding: 15px 35px !important;
+    border-radius: 50px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease !important;
+    color: white !important;
+    text-decoration: none;
+}
+
+.hero-btn:hover {
+    background-color: #b71c1c !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(211, 47, 47, 0.3);
+}
+
+.hero-btn-secondary {
+    padding: 15px 35px !important;
+    border-radius: 50px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease !important;
+    border: 2px solid white !important;
+}
+
+.hero-btn-secondary:hover {
+    background-color: white !important;
+    color: #d32f2f !important;
+    transform: translateY(-3px);
+}
+
+.hero-image-wrapper {
+    position: relative;
+    padding: 20px;
+    height: 500px; /* Fixed height to prevent layout jumps */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#heroCarousel {
+    width: 100%;
+    height: 100%;
+}
+
+#heroCarousel .carousel-inner, 
+#heroCarousel .carousel-item {
+    height: 100%;
+}
+
+#heroCarousel .carousel-item {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.8s ease-in-out !important; /* Smoother fade */
+}
+
+.hero-image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: floating 3s ease-in-out infinite; /* Added a gentle float animation */
+}
+
+@keyframes floating {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.hero-image-wrapper:hover img {
+    transform: scale(1.05) rotate(2deg);
+    animation-play-state: paused; /* Pause floating animation on hover */
+}
+
+.carousel-indicators-custom {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-indicators-custom button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #fbc02d;
+    background: transparent;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators-custom button.active {
+    background: #fbc02d;
+    width: 30px;
+    border-radius: 10px;
+}
+
+@media (max-width: 991px) {
+    .hero {
+        padding: 140px 0 80px 0;
         text-align: center;
     }
 
-    .hero-text p {
-        margin-bottom: 20px;
+    .hero-content-card {
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+
+    .brand-name {
+        font-size: 2.5rem;
+    }
+
+    .hero-divider {
+        margin: 20px auto;
+    }
+
+    .hero-description {
+        margin: 0 auto 30px auto;
+    }
+
+    .hero-cta-group {
+        justify-content: center;
     }
 }
 
@@ -260,11 +492,11 @@ h2 {
     background-color: #fff8e1;
 }
 
-.carousel-item {
+#galleryCarousel .carousel-item {
     height: 70vh;
 }
 
-.carousel-item img {
+#galleryCarousel .carousel-item img {
     object-fit: cover;
     height: 100%;
 }
@@ -296,26 +528,4 @@ footer a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.animated-heading {
-    position: relative;
-    overflow: hidden;
-}
 
-.animated-heading span {
-    display: inline-block;
-    visibility: hidden;
-}
-
-.animated-heading::before {
-    content: "Welcome to Shri Ram Tamtamwala";
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: text-change 5s infinite;
-}
-
-@keyframes text-change {
-    50% {
-        content: "We Do not Have Any Other Branch";
-    }
-}

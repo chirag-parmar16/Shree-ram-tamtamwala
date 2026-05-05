@@ -1,598 +1,952 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Shri Ram Tamtamwala</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-    </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./Images/logo.png" alt="Shree Ram Tamtamwala Logo" />
+          Shree Ram Tamtamwala
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#farshan">Farshan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--hero section-->
+    <div class="hero">
+      <div class="container-fluid hero-container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 hero-text-col">
+            <div class="hero-content-card">
+              <h1 class="hero-title">
+                <span class="brand-name">Shri Ram Tamtamwala</span>
+                <span class="hero-subtitle animated-subtitle"
+                  >Experience the Tradition</span
+                >
+              </h1>
+              <div class="hero-divider"></div>
+              <p class="hero-description">
+                75 years of culinary heritage. Experience the authentic taste of
+                tradition with our wide range of handcrafted snacks and sweets.
+              </p>
+              <div class="hero-cta-group">
+                <a href="#farshan" class="btn btn-primary hero-btn"
+                  >Explore Products</a
+                >
+                <a
+                  href="#about"
+                  class="btn btn-outline-light hero-btn-secondary"
+                  >Our Story</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 hero-image-col">
+            <div class="hero-image-wrapper">
+              <div
+                id="heroCarousel"
+                class="carousel slide carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./Images/tamtam.png"
+                      class="img-fluid"
+                      alt="Tamtam"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./Images/tamtam-main-removebg-preview.png"
+                      class="img-fluid"
+                      alt="Tamtam Main"
+                    />
+                  </div>
+                </div>
+                <div class="carousel-indicators-custom">
+                  <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="1"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--About us-->
+    <section class="about-section" id="about">
+      <div class="container about-container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 about-image-col">
+            <h5 class="about-pretitle mb-4">The Legacy Since 1947</h5>
+            <div class="about-image-wrapper">
+              <div class="about-glow-effect"></div>
+              <div class="press-cutout-container">
+                <img
+                  src="./Images/press.jpg"
+                  alt="News Recognition"
+                  class="about-press-img"
+                />
+              </div>
+              <div class="product-cutout-overlay">
+                <img
+                  src="./Images/tamtam6-removebg-preview.png"
+                  alt="Shri Ram Tamtam"
+                  class="about-cutout-img-small"
+                />
+                <div class="experience-tag">Since 1947</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 about-text-col">
+            <div class="about-content">
+              <h2 class="about-title">About Shri Ram Tamtamwala</h2>
+              <div class="hero-divider mb-4"></div>
+              <p class="about-description">
+                The journey of Shri Ram Tamtamwala began in 1947 with late
+                <strong>Shri Ram Durga Prasad Gupta</strong>. What started as a
+                humble "Khumcha" (basket) seller in the narrow lanes of Wadi,
+                Vadodara, has today become a legendary name in traditional
+                Indian snacks.
+              </p>
+              <p class="about-description">
+                For over seven decades, we have preserved the authentic taste of
+                tradition. Our secret lies in the handpicked spices and
+                time-honored recipes that have been passed down through
+                generations, ensuring every bite of our famous "Tamtam" is an
+                explosion of flavor.
+              </p>
+              <div class="milestone-grid">
+                <div class="milestone-item">
+                  <span class="milestone-year">1947</span>
+                  <span class="milestone-text">Started as Khumcha Seller</span>
+                </div>
+                <div class="milestone-item">
+                  <span class="milestone-year">1975</span>
+                  <span class="milestone-text">First Permanent Outlet</span>
+                </div>
+                <div class="milestone-item">
+                  <span class="milestone-year">2024</span>
+                  <span class="milestone-text">Iconic Vadodara Landmark</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery Redesign -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="gallery-header mb-5">
+          <h5 class="about-pretitle mb-3">The Visual Story</h5>
+          <h2 class="gallery-title">A Tradition of Taste</h2>
+          <div class="hero-divider"></div>
+        </div>
 
-    <body>
-        <!--navbar-->
-        <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./Images/logo.png" alt="Shree Ram Tamtamwala Logo">
-                    Shree Ram Tamtamwala
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <div class="bento-grid">
+          <!-- Founder / Heritage (2x2) -->
+          <div class="bento-item item-founder">
+            <img
+              src="https://shriramtamtamwala.com/images/owner.png"
+              alt="Founder Shriram Gupta"
+              class="bento-img"
+            />
+            <div class="bento-overlay">
+              <span class="bento-category">Heritage</span>
+              <h3 class="bento-caption">Founder Shri Ram Gupta</h3>
+            </div>
+          </div>
+
+          <!-- Famous Tamtam (1x1) -->
+          <div class="bento-item item-product">
+            <img
+              src="https://shriramtamtamwala.com/farsan_big/photo.jpg"
+              alt="Famous Tamtam"
+              class="bento-img"
+            />
+            <div class="bento-overlay">
+              <span class="bento-category">Iconic</span>
+              <h3 class="bento-caption">Famous Tamtam Mix</h3>
+            </div>
+          </div>
+
+          <!-- Storefront (1x3) -->
+          <div class="bento-item item-location">
+            <img
+              src="https://shriramtamtamwala.com/shop/photo%20(45).jpg"
+              alt="Storefront"
+              class="bento-img"
+            />
+            <div class="bento-overlay">
+              <span class="bento-category">Location</span>
+              <h3 class="bento-caption">Wadi, Vadodara</h3>
+            </div>
+          </div>
+
+          <!-- Shop Atmosphere (1x2) -->
+          <div class="bento-item item-atmosphere">
+            <img
+              src="https://shriramtamtamwala.com/shop/photo%20(3).jpg"
+              alt="Shop Interior"
+              class="bento-img"
+            />
+            <div class="bento-overlay">
+              <span class="bento-category">Atmosphere</span>
+              <h3 class="bento-caption">Quality & Tradition</h3>
+            </div>
+          </div>
+
+          <!-- Variety (1x1) -->
+          <div class="bento-item item-variety">
+            <img
+              src="https://shriramtamtamwala.com/farsan_big/photo%20(6).jpg"
+              alt="Lasan Bhakharvadi"
+              class="bento-img"
+            />
+            <div class="bento-overlay">
+              <span class="bento-category">Variety</span>
+              <h3 class="bento-caption">Lasan Bhakharvadi</h3>
+            </div>
+          </div>
+
+          <!-- Press Recognition (1x1) -->
+          <div class="bento-item item-press">
+            <img
+              src="https://shriramtamtamwala.com/press_big/skfB0.jpg"
+              alt="Media Recognition"
+              class="bento-img"
+            />
+            <div class="bento-overlay">
+              <span class="bento-category">Press</span>
+              <h3 class="bento-caption">National Recognition</h3>
+            </div>
+          </div>
+
+          <!-- Additional Product: Lasan Sev (1x1) -->
+          <div class="bento-item item-extra-1">
+            <img
+              src="https://shriramtamtamwala.com/farsan_big/photo%20(7).jpg"
+              alt="Lasan Sev"
+              class="bento-img"
+            />
+            <div class="bento-overlay">
+              <span class="bento-category">Variety</span>
+              <h3 class="bento-caption">Lasan Sev</h3>
+            </div>
+          </div>
+
+          <!-- Additional Product: Bhavnagari (1x1) -->
+          <div class="bento-item item-extra-2">
+            <img
+              src="https://shriramtamtamwala.com/farsan_big/photo%20(8).jpg"
+              alt="Bhavnagari Gathiya"
+              class="bento-img"
+            />
+            <div class="bento-overlay">
+              <span class="bento-category">Traditional</span>
+              <h3 class="bento-caption">Bhavnagari Gathiya</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Farshan Section -->
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3" id="farshan">
+      <section class="product-section">
+        <div class="container">
+          <h2>Our Farshan</h2>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo.jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Singbhajiya</h5>
+                  <p class="card-text">
+                    Delicious Singbhajiya, perfect for any occasion.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (1).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Mix Kathod</h5>
+                  <p class="card-text">
+                    A blend of flavors in every bite, Mix Kathod is a favorite.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (2).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Tikhi Sev</h5>
+                  <p class="card-text">
+                    Tangy and spicy Tikhi Sev adds a zesty twist to your
+                    snacking experience, guaranteed to awaken your taste buds.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (3).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Jada mathiya</h5>
+                  <p class="card-text">
+                    Enjoy the crispy goodness of Jada Mathiya, a favorite snack
+                    known for its satisfying crunch and savory flavor.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (4).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Chana dal</h5>
+                  <p class="card-text">
+                    Traditional Chana Dal offers a hearty crunch and savory
+                    taste, perfect for a quick snack any time of day.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (5).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Limbu-Mari Sev</h5>
+                  <p class="card-text">
+                    Tangy Limbu-Mari Sev combines zesty lime with crunchy Sev,
+                    creating a refreshing and addictive snack.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (6).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Lasan Bhakharvadi</h5>
+                  <p class="card-text">
+                    Garlic-infused Lasan Bhakharvadi packs a punch of flavor in
+                    every bite, ideal for garlic lovers.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (7).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Mini Bhakarvadi</h5>
+                  <p class="card-text">
+                    Bite-sized Mini Bhakharvadi delivers the same delicious
+                    taste in a compact form, perfect for on-the-go snacking.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (8).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Butter Bhakharvadi</h5>
+                  <p class="card-text">
+                    Rich and buttery, Butter Bhakharvadi melts in your mouth
+                    with its indulgent flavor and crispy texture.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (9).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Mari Gathiya</h5>
+                  <p class="card-text">
+                    Crispy Mari Gathiya offers a delightful crunch and a hint of
+                    spice, making it a favorite snack for all ages.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (10).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Moong Dal</h5>
+                  <p class="card-text">
+                    Protein-rich Moong Dal is crispy and flavorful, a wholesome
+                    snack option that satisfies hunger between meals.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (11).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Bhavnagari Gathiya</h5>
+                  <p class="card-text">
+                    Spicy Bhavnagari Gathiya provides a bold flavor experience,
+                    perfect for those who enjoy a spicy kick.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (13).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Mix TamTam</h5>
+                  <p class="card-text">
+                    Mixed Tamtam offers a variety of textures and flavors in one
+                    snack, ensuring each bite is a delightful surprise.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (14).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Special Khakhara</h5>
+                  <p class="card-text">
+                    Special Khakhara is crispy and seasoned to perfection, ideal
+                    for a light snack or as a side with tea.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (15).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Nylon Papdi</h5>
+                  <p class="card-text">
+                    Light and crispy Nylon Papdi melts in your mouth, offering a
+                    delicate texture and subtle flavor.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (16).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Masala Chakri</h5>
+                  <p class="card-text">
+                    Spicy Masala Chakri features a blend of spices in a spiral
+                    shape, delivering a burst of flavor with every bite.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (17).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Chana Chor Garam</h5>
+                  <p class="card-text">
+                    Sweet and spicy Chana Chor Garam is a popular street snack,
+                    loved for its addictive taste and crunchy texture.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (18).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Banana Waffers</h5>
+                  <p class="card-text">
+                    Crunchy Banana Wafers offer a sweet and fruity flavor,
+                    perfect for those who enjoy tropical snacks..
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (19).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Sadi Waffers</h5>
+                  <p class="card-text">
+                    Simple and satisfying, Plain Wafers are lightly salted for a
+                    classic snacking experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (20).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Butter Chakri</h5>
+                  <p class="card-text">Rich and buttery, a decadent treat.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (21).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Madrasi Waffers</h5>
+                  <p class="card-text">
+                    Taste the regional flavors with Madrasi Wafers.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (22).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Farsi Puri</h5>
+                  <p class="card-text">
+                    Crispy Farsi Puri, a perfect snack for any occasion.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (23).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Malbari Sev</h5>
+                  <p class="card-text">
+                    Regional delight, Malbari Sev offers a unique taste.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (24).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Methi Puri</h5>
+                  <p class="card-text">
+                    Enjoy the flavorful crunch of Methi Puri.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (25).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Bhadaran Moong</h5>
+                  <p class="card-text">
+                    Bhadaran Moong, a traditional favorite snack.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (26).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Lilo-Suko Chevado</h5>
+                  <p class="card-text">
+                    Sweet and salty mix, Lilo-Suko Chevado is irresistible.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (27).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dry Kachoti & Samosa</h5>
+                  <p class="card-text">
+                    Savory Dry Kachori & Samosa for a satisfying snack.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (28).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dalmooth</h5>
+                  <p class="card-text">
+                    Crunchy Dalmooth, perfect for munching anytime.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (29).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Gehu Chakri</h5>
+                  <p class="card-text">
+                    Enjoy the wholesome goodness of Gehu Chakri.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (30).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Ratlami Sev</h5>
+                  <p class="card-text">
+                    Spicy Ratlami Sev for those who love heat.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (31).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Nadiadi Mix</h5>
+                  <p class="card-text">
+                    Nadiadi Mix offers a delightful blend of flavors.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="./Images/photo (32).jpg"
+                  class="card-img-top"
+                  alt="Product Image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Solapuri Chevado</h5>
+                  <p class="card-text">
+                    Taste the regional specialty with Solapuri Chevado.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <hr />
+
+    <!--Contact us-->
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3" id="contact">
+      <section class="contact-form">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <img
+                src="./Images/tamtam-main.jpg"
+                alt="Image"
+                class="form-image"
+              />
+            </div>
+            <div class="col-md-6">
+              <h2>Contact Us</h2>
+              <p>Have a question or want to place an order? Reach out to us!</p>
+              <form>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    rows="5"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Send Message
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#gallery">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#farshan">Farshan</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+              </form>
             </div>
-        </nav>
-        <!--hero section-->
-        <div class="hero">
-            <div class="container-fluid hero-container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 hero-text-col">
-                        <div class="hero-content-card">
-                            <h1 class="hero-title">
-                                <span class="brand-name">Shri Ram Tamtamwala</span>
-                                <span class="hero-subtitle animated-subtitle">Experience the Tradition</span>
-                            </h1>
-                            <div class="hero-divider"></div>
-                            <p class="hero-description">
-                                75 years of culinary heritage. Experience the authentic taste of tradition with our wide range of handcrafted snacks and sweets.
-                            </p>
-                            <div class="hero-cta-group">
-                                <a href="#farshan" class="btn btn-primary hero-btn">Explore Products</a>
-                                <a href="#about" class="btn btn-outline-light hero-btn-secondary">Our Story</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 hero-image-col">
-                        <div class="hero-image-wrapper">
-                            <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="./Images/tamtam.png" class="img-fluid" alt="Tamtam">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./Images/tamtam-main-removebg-preview.png" class="img-fluid" alt="Tamtam Main">
-                                    </div>
-                                </div>
-                                <div class="carousel-indicators-custom">
-                                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-                                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--footer-->
+    <div class="footer-custom">
+      <footer class="container py-5">
+        <div class="row">
+          <div class="col-12 col-md">
+            <div class="footer-logo mb-2">
+              <img src="./Images/logo.png" alt="Shree Ram Tamtamwala Logo" />
             </div>
+            <small class="d-block mb-3 text-body-secondary"
+              >© 2017–2024 Shree Ram Tamtamwala</small
+            >
+          </div>
+          <div class="col-6 col-md">
+            <h5>Our Products</h5>
+            <ul class="list-unstyled text-small">
+              <li><a href="#">Traditional Snacks</a></li>
+              <li><a href="#">Sweets</a></li>
+              <li><a href="#">Namkeens</a></li>
+              <li><a href="#">Specialty Items</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Customer Service</h5>
+            <ul class="list-unstyled text-small">
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Shipping Information</a></li>
+              <li><a href="#">Return Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About Us</h5>
+            <ul class="list-unstyled text-small">
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Our Values</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Follow Us</h5>
+            <ul class="list-unstyled text-small">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
         </div>
-        <!--About us-->
-        <section class="about-section" id="about">
-            <div class="container about-container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 about-image-col">
-                        <h5 class="about-pretitle mb-4">The Legacy Since 1947</h5>
-                        <div class="about-image-wrapper">
-                            <div class="about-glow-effect"></div>
-                            <div class="press-cutout-container">
-                                <img src="./Images/press.jpg" alt="News Recognition" class="about-press-img">
-                            </div>
-                            <div class="product-cutout-overlay">
-                                <img src="./Images/tamtam6-removebg-preview.png" alt="Shri Ram Tamtam" class="about-cutout-img-small">
-                                <div class="experience-tag">Since 1947</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 about-text-col">
-                        <div class="about-content">
-                            <h2 class="about-title">About Shri Ram Tamtamwala</h2>
-                            <div class="hero-divider mb-4"></div>
-                            <p class="about-description">
-                                The journey of Shri Ram Tamtamwala began in 1947 with late <strong>Shri Ram Durga Prasad Gupta</strong>. What started as a humble "Khumcha" (basket) seller in the narrow lanes of Wadi, Vadodara, has today become a legendary name in traditional Indian snacks.
-                            </p>
-                            <p class="about-description">
-                                For over seven decades, we have preserved the authentic taste of tradition. Our secret lies in the handpicked spices and time-honored recipes that have been passed down through generations, ensuring every bite of our famous "Tamtam" is an explosion of flavor.
-                            </p>
-                            <div class="milestone-grid">
-                                <div class="milestone-item">
-                                    <span class="milestone-year">1947</span>
-                                    <span class="milestone-text">Started as Khumcha Seller</span>
-                                </div>
-                                <div class="milestone-item">
-                                    <span class="milestone-year">1975</span>
-                                    <span class="milestone-text">First Permanent Outlet</span>
-                                </div>
-                                <div class="milestone-item">
-                                    <span class="milestone-year">2024</span>
-                                    <span class="milestone-text">Iconic Vadodara Landmark</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr>
-        <!-- Gallery -->
-        <div class="p-5 mb-4 bg-body-tertiary rounded-3" id="gallery">
-        <section>
-            <div class="gallery-container">
-                <h2>Gallery</h2>
-                <div class="carousel-box ">
-                    <section id="galleryCarousel" class="carousel slide carousel-fade " data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./Images/galary1.jpg" class="d-block w-100" alt="Carousel Image 1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./Images/galary2.jpg" class="d-block w-100" alt="Carousel Image 2">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./Images/galary3.jpg" class="d-block w-100" alt="Carousel Image 3">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./Images/galary4.jpg" class="d-block w-100" alt="Carousel Image 4">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </section>
-                </div>
-            </div>
-        </section>
-        </div>
-        
-        <!-- Farshan Section -->
-        <div class="p-5 mb-4  bg-body-tertiary rounded-3" id="farshan">
-            <section class="product-section">
-                <div class="container">
-                    <h2>Our Farshan</h2>
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
-                        
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo.jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Singbhajiya</h5>
-                                    <p class="card-text">Delicious Singbhajiya, perfect for any occasion.</p>
-                                </div>
-                            </div>
-                        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-                        
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (1).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Mix Kathod</h5>
-                                    <p class="card-text">A blend of flavors in every bite, Mix Kathod is a favorite.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (2).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Tikhi Sev</h5>
-                                    <p class="card-text">Tangy and spicy Tikhi Sev adds a zesty twist to your snacking experience, guaranteed to awaken your taste buds.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (3).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Jada mathiya</h5>
-                                    <p class="card-text">Enjoy the crispy goodness of Jada Mathiya, a favorite snack known for its satisfying crunch and savory flavor.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (4).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Chana dal</h5>
-                                    <p class="card-text">Traditional Chana Dal offers a hearty crunch and savory taste, perfect for a quick snack any time of day.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (5).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Limbu-Mari Sev</h5>
-                                    <p class="card-text">Tangy Limbu-Mari Sev combines zesty lime with crunchy Sev, creating a refreshing and addictive snack.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (6).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Lasan Bhakharvadi</h5>
-                                    <p class="card-text">Garlic-infused Lasan Bhakharvadi packs a punch of flavor in every bite, ideal for garlic lovers.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (7).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Mini Bhakarvadi</h5>
-                                    <p class="card-text">Bite-sized Mini Bhakharvadi delivers the same delicious taste in a compact form, perfect for on-the-go snacking.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (8).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Butter Bhakharvadi</h5>
-                                    <p class="card-text">Rich and buttery, Butter Bhakharvadi melts in your mouth with its indulgent flavor and crispy texture.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (9).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Mari Gathiya</h5>
-                                    <p class="card-text">Crispy Mari Gathiya offers a delightful crunch and a hint of spice, making it a favorite snack for all ages.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (10).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Moong Dal</h5>
-                                    <p class="card-text">Protein-rich Moong Dal is crispy and flavorful, a wholesome snack option that satisfies hunger between meals.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (11).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Bhavnagari Gathiya</h5>
-                                    <p class="card-text">Spicy Bhavnagari Gathiya provides a bold flavor experience, perfect for those who enjoy a spicy kick.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (13).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Mix TamTam</h5>
-                                    <p class="card-text">Mixed Tamtam offers a variety of textures and flavors in one snack, ensuring each bite is a delightful surprise.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (14).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Special Khakhara</h5>
-                                    <p class="card-text">Special Khakhara is crispy and seasoned to perfection, ideal for a light snack or as a side with tea.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (15).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Nylon Papdi</h5>
-                                    <p class="card-text">Light and crispy Nylon Papdi melts in your mouth, offering a delicate texture and subtle flavor.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (16).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Masala Chakri</h5>
-                                    <p class="card-text">Spicy Masala Chakri features a blend of spices in a spiral shape, delivering a burst of flavor with every bite.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (17).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Chana Chor Garam</h5>
-                                    <p class="card-text">Sweet and spicy Chana Chor Garam is a popular street snack, loved for its addictive taste and crunchy texture.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (18).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Banana Waffers</h5>
-                                    <p class="card-text">Crunchy Banana Wafers offer a sweet and fruity flavor, perfect for those who enjoy tropical snacks..</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (19).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Sadi Waffers</h5>
-                                    <p class="card-text">Simple and satisfying, Plain Wafers are lightly salted for a classic snacking experience.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (20).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Butter Chakri</h5>
-                                    <p class="card-text">Rich and buttery, a decadent treat.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (21).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Madrasi Waffers</h5>
-                                    <p class="card-text">Taste the regional flavors with Madrasi Wafers.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (22).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Farsi Puri</h5>
-                                    <p class="card-text">Crispy Farsi Puri, a perfect snack for any occasion.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (23).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Malbari Sev</h5>
-                                    <p class="card-text">Regional delight, Malbari Sev offers a unique taste.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (24).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Methi Puri</h5>
-                                    <p class="card-text">Enjoy the flavorful crunch of Methi Puri.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (25).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Bhadaran Moong</h5>
-                                    <p class="card-text">Bhadaran Moong, a traditional favorite snack.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (26).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Lilo-Suko Chevado</h5>
-                                    <p class="card-text">Sweet and salty mix, Lilo-Suko Chevado is irresistible.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (27).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Dry Kachoti & Samosa</h5>
-                                    <p class="card-text">Savory Dry Kachori & Samosa for a satisfying snack.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (28).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Dalmooth</h5>
-                                    <p class="card-text">Crunchy Dalmooth, perfect for munching anytime.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (29).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Gehu Chakri</h5>
-                                    <p class="card-text">Enjoy the wholesome goodness of Gehu Chakri.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (30).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Ratlami Sev</h5>
-                                    <p class="card-text">Spicy Ratlami Sev for those who love heat.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (31).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Nadiadi Mix</h5>
-                                    <p class="card-text">Nadiadi Mix offers a delightful blend of flavors.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src="./Images/photo (32).jpg" class="card-img-top" alt="Product Image">
-                                <div class="card-body">
-                                    <h5 class="card-title">Solapuri Chevado</h5>
-                                    <p class="card-text">Taste the regional specialty with Solapuri Chevado.</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </section>
-        </div>
-        <hr>
-
-
-
-        
-
-        <!--Contact us-->
-        <div class="p-5 mb-4 bg-body-tertiary rounded-3" id="contact">
-            <section class="contact-form">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <img src="./Images/tamtam-main.jpg" alt="Image" class="form-image">
-                        </div>
-                        <div class="col-md-6">
-                            <h2>Contact Us</h2>
-                            <p>Have a question or want to place an order? Reach out to us!</p>
-                            <form>
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" placeholder="Your Name" required>
-                                </div>
-                                <div class="mb-3">
-                                    <input type="email" class="form-control" placeholder="Your Email" required>
-                                </div>
-                                <div class="mb-3">
-                                    <textarea class="form-control" rows="5" placeholder="Your Message"
-                                        required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Send Message</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <!--footer-->
-        <div class="footer-custom">
-            <footer class="container py-5">
-                <div class="row">
-                    <div class="col-12 col-md">
-                        <div class="footer-logo mb-2">
-                            <img src="./Images/logo.png" alt="Shree Ram Tamtamwala Logo">
-                        </div>
-                        <small class="d-block mb-3 text-body-secondary">© 2017–2024 Shree Ram Tamtamwala</small>
-                    </div>
-                    <div class="col-6 col-md">
-                        <h5>Our Products</h5>
-                        <ul class="list-unstyled text-small">
-                            <li><a href="#">Traditional Snacks</a></li>
-                            <li><a href="#">Sweets</a></li>
-                            <li><a href="#">Namkeens</a></li>
-                            <li><a href="#">Specialty Items</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md">
-                        <h5>Customer Service</h5>
-                        <ul class="list-unstyled text-small">
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="#">Shipping Information</a></li>
-                            <li><a href="#">Return Policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md">
-                        <h5>About Us</h5>
-                        <ul class="list-unstyled text-small">
-                            <li><a href="#">Our Story</a></li>
-                            <li><a href="#">Our Values</a></li>
-                            <li><a href="#">Press</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md">
-                        <h5>Follow Us</h5>
-                        <ul class="list-unstyled text-small">
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">LinkedIn</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </footer>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
-        
-            
-        <script src="main.js" defer></script>
-     
-    </body>
-
+    <script src="main.js" defer></script>
+  </body>
 </html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visual Archive | Shree Ram Tamtamwala</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      :root {
+        --lib-bg: #faf9f6;
+        --lib-text: #1a1a1a;
+        --lib-accent: #d32f2f;
+      }
+
+      body {
+        background-color: var(--lib-bg);
+      }
+
+      /* Perfecting Library Layout */
+      .library-section {
+        padding: 80px 0;
+      }
+
+      /* Advanced Library Grid */
+      .lib-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 350px;
+        gap: 30px;
+      }
+
+      .lib-item {
+        position: relative;
+        border-radius: 4px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.04);
+        cursor: pointer;
+        transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .lib-item::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50%;
+        background: linear-gradient(to top, rgba(160, 30, 30, 0.8) 0%, transparent 100%);
+        z-index: 1;
+        transition: opacity 0.4s ease;
+      }
+
+      .lib-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+      }
+
+      .lib-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.8s ease;
+      }
+
+      .lib-item:hover .lib-img {
+        transform: scale(1.08);
+      }
+
+      .lib-caption {
+        position: absolute;
+        bottom: 25px;
+        left: 25px;
+        color: white;
+        font-size: 0.95rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        margin: 0;
+        z-index: 2;
+      }
+
+      /* Specific Spans for the "Perfect" Reference look */
+      .s-1 { grid-column: span 1; }
+      .s-2 { grid-column: span 2; }
+
+      @media (max-width: 1200px) {
+        .lib-grid { grid-auto-rows: 300px; }
+      }
+
+      @media (max-width: 992px) {
+        .lib-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .s-2 { grid-column: span 2; }
+      }
+
+      @media (max-width: 576px) {
+        .lib-grid {
+          grid-template-columns: 1fr;
+          grid-auto-rows: 400px;
+        }
+        .s-1, .s-2 { grid-column: span 1; }
+      }
+
+      /* Custom Lightbox Refined */
+      .lib-lightbox {
+        position: fixed;
+        inset: 0;
+        background: rgba(250, 249, 246, 0.98);
+        z-index: 2100;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(10px);
+      }
+
+      .lib-lightbox.active {
+        display: flex;
+        animation: libFadeIn 0.5s ease forwards;
+      }
+
+      .lib-lightbox-content {
+        max-width: 85%;
+        max-height: 85%;
+        position: relative;
+      }
+
+      .lib-lightbox-img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        box-shadow: 0 50px 100px rgba(0,0,0,0.1);
+      }
+
+      .lib-close {
+        position: absolute;
+        top: -60px;
+        right: 0;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 0.8rem;
+        cursor: pointer;
+        color: var(--lib-text);
+      }
+
+      @keyframes libFadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./Images/logo.png" alt="Shree Ram Tamtamwala Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="farsan.html">Farsan</a></li>
+            <li class="nav-item"><a class="nav-link" href="manufacturing.html">Manufacturing</a></li>
+            <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="press.html">Press</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Hero (Restored & Integrated) -->
+    <header class="page-hero">
+      <div class="page-hero-content container text-center">
+        <h5 class="page-hero-subtitle">Visual Experience</h5>
+        <h1 class="page-hero-title">Gallery Archive</h1>
+        <div class="hero-divider mx-auto"></div>
+      </div>
+    </header>
+
+    <!-- Library Body -->
+    <main class="container library-section">
+      <div class="row align-items-center mb-5 reveal">
+          <div class="col-lg-6">
+              <h5 class="about-pretitle">The Visual Story</h5>
+              <h2 class="about-title">The Portrait Gallery</h2>
+              <p class="about-description">A curated 75-year archive of Vadodara's culinary landmark. Every frame tells a story of tradition, craftsmanship, and the people behind the legacy.</p>
+          </div>
+      </div>
+
+      <div class="lib-grid reveal">
+        <!-- Row 1: 1-2-1 Pattern -->
+        <div class="lib-item s-1" data-full="./Images/tamtam-main.png">
+          <img src="./Images/tamtam-main.png" class="lib-img" alt="Signature Tamtam" />
+          <p class="lib-caption">Signature Tamtam</p>
+        </div>
+        <div class="lib-item s-2" data-full="./Images/owner.png">
+          <img src="./Images/owner.png" class="lib-img" alt="The Founder" />
+          <p class="lib-caption">The Founder</p>
+        </div>
+        <div class="lib-item s-1" data-full="./Images/tamtam.png">
+          <img src="./Images/tamtam.png" class="lib-img" alt="Authentic Tamtam" />
+          <p class="lib-caption">Authentic Tamtam</p>
+        </div>
+
+        <!-- Row 2: 2-1-1 Pattern -->
+        <div class="lib-item s-2" data-full="./Images/gallery/landmark.jpg">
+          <img src="./Images/gallery/landmark.jpg" class="lib-img" alt="Wadi Main Outlet" />
+          <p class="lib-caption">Wadi Main Outlet</p>
+        </div>
+        <div class="lib-item s-1" data-full="./Images/gallery/photo (32).jpg">
+          <img src="./Images/gallery/photo (32).jpg" class="lib-img" alt="Traditional Craft" />
+          <p class="lib-caption">Traditional Craft</p>
+        </div>
+        <div class="lib-item s-1" data-full="./Images/gallery/photo (35).jpg">
+          <img src="./Images/gallery/photo (35).jpg" class="lib-img" alt="Legacy Process" />
+          <p class="lib-caption">Legacy Process</p>
+        </div>
+
+        <!-- Row 3: 1-1-2 Pattern -->
+        <div class="lib-item s-1" data-full="./Images/photo (11).jpg">
+          <img src="./Images/photo (11).jpg" class="lib-img" alt="Service Tradition" />
+          <p class="lib-caption">Service Tradition</p>
+        </div>
+        <div class="lib-item s-1" data-full="./Images/gallery/photo-(1).jpg">
+          <img src="./Images/gallery/photo-(1).jpg" class="lib-img" alt="Original Roots" />
+          <p class="lib-caption">Since 1947</p>
+        </div>
+        <div class="lib-item s-2" data-full="./Images/bg.jpg">
+          <img src="./Images/bg.jpg" class="lib-img" alt="The Landmark" />
+          <p class="lib-caption">The Landmark</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Custom Lightbox Overlay -->
+    <div class="lib-lightbox" id="lib-lb">
+      <div class="lib-lightbox-content">
+        <span class="lib-close" id="lib-close">Close Archive</span>
+        <img src="" alt="Premium View" class="lib-lightbox-img" id="lib-lb-img" />
+      </div>
+    </div>
+
+    <!-- Luxury Heritage Footer -->
+    <footer class="footer-custom">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-4 col-md-12 text-center text-lg-start">
+            <div class="footer-logo">
+              <img src="./Images/logo.png" alt="Shree Ram Tamtamwala Logo" />
+            </div>
+            <p class="text-muted small pe-lg-5 mt-3">
+              Preserving the authentic flavors of Vadodara since 1947. A 75-year
+              legacy of handcrafted excellence, purity, and culinary tradition.
+            </p>
+            <p class="text-muted small mt-4 mb-0">
+              © 1947–2024 Shree Ram Tamtamwala.<br />All rights reserved.
+            </p>
+          </div>
+          <div class="col-lg-2 col-6">
+            <h6 class="text-uppercase fw-bold ls-2">The Legacy</h6>
+            <ul class="list-unstyled small">
+              <li class="mb-2"><a href="about.html" class="text-decoration-none">Our Story</a></li>
+              <li class="mb-2"><a href="gallery.html" class="text-decoration-none">Visual Gallery</a></li>
+              <li class="mb-2"><a href="manufacturing.html" class="text-decoration-none">Craftsmanship</a></li>
+              <li class="mb-2"><a href="press.html" class="text-decoration-none">Media Archive</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-6">
+            <h6 class="text-uppercase fw-bold ls-2">Experience</h6>
+            <ul class="list-unstyled small">
+              <li class="mb-2"><a href="farsan.html" class="text-decoration-none">Farsan Range</a></li>
+              <li class="mb-2"><a href="menu.html" class="text-decoration-none">Full Menu</a></li>
+              <li class="nav-item"><a class="text-decoration-none" href="contact.html">Visit Us</a></li>
+              <li class="mb-2"><a href="#" class="text-decoration-none">Order Online</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12 text-center text-lg-end">
+            <h6 class="text-uppercase fw-bold ls-2">Connect With Us</h6>
+            <div
+              class="d-flex justify-content-center justify-content-lg-end gap-4 mb-4 mt-3"
+            >
+              <a href="#" class="text-decoration-none small">Instagram</a>
+              <a href="#" class="text-decoration-none small">Facebook</a>
+              <a href="#" class="text-decoration-none small">WhatsApp</a>
+            </div>
+            <p class="text-muted small mb-0">"Designed for a Heritage of Taste."</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const items = document.querySelectorAll(".lib-item");
+        const lightbox = document.getElementById("lib-lb");
+        const lbImg = document.getElementById("lib-lb-img");
+        const closeBtn = document.getElementById("lib-close");
+
+        items.forEach(item => {
+          item.addEventListener("click", () => {
+            const src = item.getAttribute("data-full");
+            lbImg.src = src;
+            lightbox.classList.add("active");
+            document.body.style.overflow = "hidden";
+          });
+        });
+
+        const closeLB = () => {
+          lightbox.classList.remove("active");
+          document.body.style.overflow = "auto";
+        };
+
+        closeBtn.addEventListener("click", closeLB);
+        lightbox.addEventListener("click", (e) => {
+          if (e.target === lightbox) closeLB();
+        });
+      });
+    </script>
+  </body>
+</html>

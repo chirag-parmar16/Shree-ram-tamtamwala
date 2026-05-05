@@ -67,3 +67,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+// Scroll Reveal Logic
+document.addEventListener("DOMContentLoaded", () => {
+  const revealElements = document.querySelectorAll('.reveal');
+  
+  const revealOnScroll = () => {
+    revealElements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      const isVisible = rect.top < (window.innerHeight - 50);
+      if (isVisible) {
+        el.classList.add('active');
+      }
+    });
+  };
+
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll(); // Trigger once on load
+});

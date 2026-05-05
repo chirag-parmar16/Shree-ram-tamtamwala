@@ -225,6 +225,17 @@ body {
   transform: translateY(-50%);
 }
 
+/* Flip the line to the right for right-aligned headers */
+.text-lg-end .about-pretitle {
+  padding-left: 0;
+  padding-right: 55px;
+}
+
+.text-lg-end .about-pretitle::before {
+  left: auto;
+  right: 0;
+}
+
 @media (max-width: 991px) {
   .about-pretitle {
     display: block;
@@ -1627,12 +1638,108 @@ footer a:hover {
   font-size: 1.2rem;
 }
 
-.menu-item {
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+/* Manufacturing & Packaging Page Styles */
+.manufacturing-card {
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.03);
+  transition: all 0.4s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+  aspect-ratio: 2 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.menu-item.hidden {
-  display: none;
+.manufacturing-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.manufacturing-card:hover {
+  transform: translateY(-8px);
+}
+
+.packaging-showcase {
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.03);
+  transition: all 0.4s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+  aspect-ratio: 2 / 3; /* Matches machine cards */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.packaging-showcase img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures packets don't crop */
+}
+
+.packaging-showcase.landscape {
+  aspect-ratio: 16 / 10; /* Wider for blueprints */
+}
+
+.blueprint-card {
+  transition: all 0.5s ease;
+}
+
+.blueprint-card:hover img {
+  box-shadow: 0 30px 60px rgba(0,0,0,0.15) !important;
+}
+
+/* 5 Column Grid for Desktop Machinery Section */
+@media (min-width: 992px) {
+  .col-lg-2-4 {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+}
+
+/* Premium Decorative Elements */
+.bg-number {
+  position: absolute;
+  font-size: 25rem;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.03);
+  line-height: 1;
+  top: -50px;
+  left: -50px;
+  z-index: 0;
+  font-family: 'Outfit', sans-serif;
+  pointer-events: none;
+  user-select: none;
+}
+
+.bg-number.right {
+  left: auto;
+  right: -50px;
+}
+
+/* Reveal Animation */
+.reveal {
   opacity: 0;
-  transform: scale(0.9);
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Section Dividers */
+.hero-divider.ms-0 {
+  margin-left: 0 !important;
+}
+
+.hero-divider.me-lg-0 {
+  margin-right: 0 !important;
 }

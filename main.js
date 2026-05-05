@@ -85,11 +85,21 @@ document.addEventListener("DOMContentLoaded", () => {
   revealOnScroll(); // Trigger once on load
 });
 
-// Dynamic Year Logic
+// Dynamic Year & Heritage Logic
 document.addEventListener("DOMContentLoaded", () => {
-  const yearElements = document.querySelectorAll(".current-year");
   const currentYear = new Date().getFullYear();
+  const establishedYear = 1947;
+  const yearsOfLegacy = currentYear - establishedYear;
+
+  // Update Copyright Years
+  const yearElements = document.querySelectorAll(".current-year");
   yearElements.forEach((el) => {
     el.textContent = currentYear;
+  });
+
+  // Update Heritage Year Counters (e.g., 75 -> 79)
+  const heritageElements = document.querySelectorAll(".heritage-years");
+  heritageElements.forEach((el) => {
+    el.textContent = yearsOfLegacy;
   });
 });

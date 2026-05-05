@@ -727,98 +727,147 @@ body {
   background-color: #faf9f6;
 }
 
-.contact-card-premium {
-  background: white;
-  border-radius: 30px;
-  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.06);
-  border: 1px solid rgba(0, 0, 0, 0.03);
-  overflow: hidden;
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+/* --- HERITAGE ATELIER CONTACT REDESIGN --- */
+.contact-section {
+  padding: 100px 0;
+  background-color: #fff;
 }
 
-.info-strip {
-  background: #faf9f6;
-  padding: 60px 50px;
-  height: 100%;
-  border-right: 1px solid rgba(0, 0, 0, 0.05);
+.atelier-label {
+  font-family: "Outfit", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #c5a059; /* Sophisticated Muted Gold */
+  margin-bottom: 25px;
+  display: block;
 }
 
-.contact-main-title {
+.atelier-title {
   font-family: "Playfair Display", serif;
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 900;
   color: #1a1a1a;
+  line-height: 1.1;
   margin-bottom: 30px;
 }
 
-.info-item {
-  margin-bottom: 40px;
+.atelier-line {
+  width: 80px;
+  height: 1px;
+  background: #1a1a1a;
+  margin-bottom: 60px;
 }
 
-.info-label {
+.atelier-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.atelier-grid-item h6 {
   font-family: "Outfit", sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
   font-size: 0.8rem;
-  letter-spacing: 2px;
   color: #d32f2f;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.atelier-grid-item p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.atelier-form-card {
+  background: #fafafa;
+  padding: 60px;
+  border-radius: 4px;
+  border: 1px solid #eee;
+}
+
+.atelier-group {
+  margin-bottom: 5px;
+}
+
+.atelier-group label {
   display: block;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #999;
   margin-bottom: 10px;
 }
 
-.info-value {
-  font-size: 1.2rem;
-  color: #333;
-  font-weight: 600;
+.atelier-input {
+  width: 100%;
+  border: none !important;
+  border-bottom: 1px solid #ddd !important;
+  background: transparent !important;
+  padding: 12px 0 !important;
   font-family: "Outfit", sans-serif;
+  font-size: 1.05rem !important;
+  color: #1a1a1a !important;
+  transition: all 0.3s ease;
+  border-radius: 0 !important;
 }
 
-.info-subtext {
-  color: #777;
-  font-size: 0.95rem;
-  margin-top: 5px;
-}
-
-.luxury-form-group {
-  margin-bottom: 30px;
-}
-
-.luxury-input {
-  background: #fcfcfc !important;
-  border: 1px solid #eee !important;
-  padding: 18px 25px !important;
-  border-radius: 15px !important;
-  font-family: "Outfit", sans-serif;
-  font-size: 1rem !important;
-  transition: all 0.3s ease !important;
-}
-
-.luxury-input:focus {
-  border-color: #d32f2f !important;
-  background: white !important;
-  box-shadow: 0 10px 20px rgba(211, 47, 47, 0.05) !important;
+.atelier-input:focus {
+  border-bottom-color: #c5a059 !important;
   outline: none !important;
 }
 
-.btn-luxury {
-  background: #d32f2f;
-  color: white;
-  padding: 18px 45px;
-  border-radius: 50px;
+.btn-atelier-submit {
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  padding: 20px 40px;
+  font-family: "Outfit", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  border: none;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 3px;
+  font-size: 0.85rem;
+  transition: all 0.4s ease;
   width: 100%;
-  box-shadow: 0 10px 20px rgba(211, 47, 47, 0.2);
 }
 
-.btn-luxury:hover {
-  background: #b71c1c;
+.btn-atelier-submit:hover {
+  background: #d32f2f;
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(211, 47, 47, 0.2);
-  color: white;
+  box-shadow: 0 10px 30px rgba(211, 47, 47, 0.2);
+}
+
+/* Mobile Optimizations for Atelier */
+@media (max-width: 991px) {
+  .contact-section {
+    padding: 60px 0; /* Reduced top padding */
+  }
+  .atelier-title {
+    font-size: 2.5rem;
+  }
+  .atelier-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .atelier-form-card {
+    padding: 40px 25px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact-section {
+    padding: 40px 0;
+  }
+  .atelier-title {
+    font-size: 2rem;
+  }
 }
 
 .footer-custom {
@@ -1216,8 +1265,8 @@ footer a:hover {
 /* Unified Page Hero System */
 .page-hero {
   position: relative;
-  height: 45vh;
-  min-height: 400px;
+  height: 55vh; /* Increased from 45vh */
+  min-height: 480px; /* Increased from 400px */
   background: url("./Images/bg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -2101,82 +2150,83 @@ footer a:hover {
   }
 
   @media (max-width: 400px) {
-  /* Stack CTA Buttons Vertically to prevent overflow */
-  .hero-cta-group {
-    flex-direction: column !important;
-    align-items: stretch !important;
-    gap: 12px !important;
-    width: 100% !important;
-  }
+    /* Stack CTA Buttons Vertically to prevent overflow */
+    .hero-cta-group {
+      flex-direction: column !important;
+      align-items: stretch !important;
+      gap: 12px !important;
+      width: 100% !important;
+    }
 
-  .hero-btn, .hero-btn-secondary {
-    width: 100% !important;
-    padding: 15px 20px !important;
-    font-size: 0.9rem !important;
-  }
+    .hero-btn,
+    .hero-btn-secondary {
+      width: 100% !important;
+      padding: 15px 20px !important;
+      font-size: 0.9rem !important;
+    }
 
-  /* Fix Brand Name Cutoff - Allow Wrapping */
-  .navbar-custom .navbar-brand {
-    font-size: 0.8rem !important;
-    white-space: normal !important;
-    line-height: 1.1 !important;
-    max-width: 180px !important;
-    display: flex !important;
-    align-items: center !important;
-  }
+    /* Fix Brand Name Cutoff - Allow Wrapping */
+    .navbar-custom .navbar-brand {
+      font-size: 0.8rem !important;
+      white-space: normal !important;
+      line-height: 1.1 !important;
+      max-width: 180px !important;
+      display: flex !important;
+      align-items: center !important;
+    }
 
-  .navbar-brand img {
-    height: 30px !important;
-    flex-shrink: 0 !important;
-  }
+    .navbar-brand img {
+      height: 30px !important;
+      flex-shrink: 0 !important;
+    }
 
-  /* Hero Card Optimization for 334px */
-  .hero-content-card {
-    padding: 25px 15px !important;
-    margin: 0 !important;
-    border-radius: 15px !important;
-    width: 100% !important;
-  }
+    /* Hero Card Optimization for 334px */
+    .hero-content-card {
+      padding: 25px 15px !important;
+      margin: 0 !important;
+      border-radius: 15px !important;
+      width: 100% !important;
+    }
 
-  /* About Section Empty Space Fix */
-  .about-section {
-    padding: 20px 0 !important;
-  }
-  
-  .about-image-wrapper {
-    min-height: auto !important;
-    padding: 20px 0 !important;
-  }
+    /* About Section Empty Space Fix */
+    .about-section {
+      padding: 20px 0 !important;
+    }
 
-  .about-content {
-    margin-top: 15px !important;
-  }
+    .about-image-wrapper {
+      min-height: auto !important;
+      padding: 20px 0 !important;
+    }
 
-  .heritage-info-block {
-    margin-bottom: 20px !important;
-  }
+    .about-content {
+      margin-top: 15px !important;
+    }
 
-  /* Heritage Image Stacking Fix - FULL WIDTH & TIGHT */
-  .press-cutout-container {
-    max-width: 100% !important;
-    padding: 5px !important;
-    margin: 0 auto !important;
-  }
+    .heritage-info-block {
+      margin-bottom: 20px !important;
+    }
 
-  .product-cutout-overlay {
-    bottom: -10px !important;
-    right: 5px !important;
-    width: 42% !important;
-    max-width: 150px !important;
-  }
+    /* Heritage Image Stacking Fix - FULL WIDTH & TIGHT */
+    .press-cutout-container {
+      max-width: 100% !important;
+      padding: 5px !important;
+      margin: 0 auto !important;
+    }
 
-  .experience-tag {
-    right: -5px !important;
-    top: 35% !important;
-    font-size: 0.6rem !important;
-    padding: 3px 8px !important;
-    box-shadow: -5px 5px 15px rgba(0,0,0,0.2) !important;
-  }
+    .product-cutout-overlay {
+      bottom: -10px !important;
+      right: 5px !important;
+      width: 42% !important;
+      max-width: 150px !important;
+    }
+
+    .experience-tag {
+      right: -5px !important;
+      top: 35% !important;
+      font-size: 0.6rem !important;
+      padding: 3px 8px !important;
+      box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.2) !important;
+    }
 
     .brand-name {
       font-size: 1.5rem !important;

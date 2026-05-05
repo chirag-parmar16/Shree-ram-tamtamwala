@@ -384,7 +384,6 @@ body {
   transition: all 0.3s ease;
 }
 
-
 .carousel-indicators-custom button.active {
   background: #fbc02d;
   width: 30px;
@@ -731,8 +730,8 @@ body {
 .contact-card-premium {
   background: white;
   border-radius: 30px;
-  box-shadow: 0 40px 100px rgba(0,0,0,0.06);
-  border: 1px solid rgba(0,0,0,0.03);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.03);
   overflow: hidden;
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -741,7 +740,7 @@ body {
   background: #faf9f6;
   padding: 60px 50px;
   height: 100%;
-  border-right: 1px solid rgba(0,0,0,0.05);
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .contact-main-title {
@@ -757,7 +756,7 @@ body {
 }
 
 .info-label {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -771,7 +770,7 @@ body {
   font-size: 1.2rem;
   color: #333;
   font-weight: 600;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 .info-subtext {
@@ -779,7 +778,6 @@ body {
   font-size: 0.95rem;
   margin-top: 5px;
 }
-
 
 .luxury-form-group {
   margin-bottom: 30px;
@@ -790,7 +788,7 @@ body {
   border: 1px solid #eee !important;
   padding: 18px 25px !important;
   border-radius: 15px !important;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 1rem !important;
   transition: all 0.3s ease !important;
 }
@@ -1233,7 +1231,11 @@ footer a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
   z-index: 1;
 }
 
@@ -1247,7 +1249,7 @@ footer a:hover {
   font-size: 4rem;
   font-weight: 900;
   margin-bottom: 10px;
-  text-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .page-hero-subtitle {
@@ -1264,7 +1266,7 @@ footer a:hover {
   background: white;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
   text-align: center;
   transition: transform 0.3s ease;
   border: 1px solid rgba(211, 47, 47, 0.05);
@@ -1301,7 +1303,7 @@ footer a:hover {
   color: #1a1a1a;
   padding: 5px 15px;
   border-radius: 30px;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 700;
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -1309,7 +1311,7 @@ footer a:hover {
 }
 
 .founder-info h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #d32f2f;
   margin-bottom: 5px;
   font-size: 1.8rem;
@@ -1365,7 +1367,7 @@ footer a:hover {
 }
 
 .heritage-timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1407,7 +1409,7 @@ footer a:hover {
 
 .timeline-year {
   display: block;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 800;
   font-size: 2.2rem;
   color: #fbc02d;
@@ -1416,7 +1418,7 @@ footer a:hover {
 }
 
 .timeline-content h4 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #1a1a1a;
   margin-bottom: 12px;
   font-size: 1.6rem;
@@ -1494,7 +1496,7 @@ footer a:hover {
   z-index: 10;
   box-shadow: 0 5px 15px rgba(211, 47, 47, 0.4);
   border: 1px solid rgba(251, 192, 45, 0.2);
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   pointer-events: none;
 }
 
@@ -1503,13 +1505,13 @@ footer a:hover {
   width: 100% !important; /* Card fills the column */
   background: white;
   border-radius: 20px;
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   overflow: hidden;
   height: 100%;
   display: flex;
   flex-direction: column;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .product-image-wrapper {
@@ -1549,7 +1551,7 @@ footer a:hover {
 }
 
 .product-title {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.4rem;
   font-weight: 800;
   color: #1a1a1a;
@@ -1573,7 +1575,7 @@ footer a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
   padding-top: 18px;
 }
 
@@ -1604,10 +1606,10 @@ footer a:hover {
 .btn-filter {
   background: white;
   color: #1a1a1a;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 12px 28px;
   border-radius: 50px;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 0.95rem;
   transition: all 0.3s ease;
@@ -1654,9 +1656,9 @@ footer a:hover {
   background: white;
   padding: 10px;
   border-radius: 12px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.03);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.03);
   transition: all 0.4s ease;
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   aspect-ratio: 2 / 3;
   display: flex;
   align-items: center;
@@ -1679,9 +1681,9 @@ footer a:hover {
   background: white;
   padding: 10px;
   border-radius: 12px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.03);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.03);
   transition: all 0.4s ease;
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   aspect-ratio: 2 / 3; /* Matches machine cards */
   display: flex;
   align-items: center;
@@ -1703,7 +1705,7 @@ footer a:hover {
 }
 
 .blueprint-card:hover img {
-  box-shadow: 0 30px 60px rgba(0,0,0,0.15) !important;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15) !important;
 }
 
 /* 5 Column Grid for Desktop Machinery Section */
@@ -1724,7 +1726,7 @@ footer a:hover {
   top: -50px;
   left: -50px;
   z-index: 0;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   pointer-events: none;
   user-select: none;
 }
@@ -1759,14 +1761,14 @@ footer a:hover {
 .news-card-premium {
   background: white !important;
   border-radius: 15px;
-  border: 1px solid rgba(0,0,0,0.1) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
   overflow: hidden;
   height: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .news-card-premium:hover {
@@ -1817,9 +1819,18 @@ footer a:hover {
 }
 
 @keyframes pulse-red {
-  0% { transform: scale(1); box-shadow: 0 5px 15px rgba(211, 47, 47, 0.4); }
-  50% { transform: scale(1.05); box-shadow: 0 5px 25px rgba(211, 47, 47, 0.6); }
-  100% { transform: scale(1); box-shadow: 0 5px 15px rgba(211, 47, 47, 0.4); }
+  0% {
+    transform: scale(1);
+    box-shadow: 0 5px 15px rgba(211, 47, 47, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 5px 25px rgba(211, 47, 47, 0.6);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 5px 15px rgba(211, 47, 47, 0.4);
+  }
 }
 
 .news-meta {
@@ -1832,11 +1843,15 @@ footer a:hover {
   letter-spacing: 1px;
 }
 
-.news-source { color: #d32f2f; }
-.news-date { color: #999; }
+.news-source {
+  color: #d32f2f;
+}
+.news-date {
+  color: #999;
+}
 
 .news-title {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.3rem;
   font-weight: 800;
   line-height: 1.3;
@@ -1869,13 +1884,312 @@ footer a:hover {
   padding-left: 0 !important;
 }
 
-@media (max-width: 991px) {
-  .info-strip {
-    border-right: none;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-    padding: 50px 30px;
+/* --- AGGRESSIVE MOBILE LAYOUT STABILIZATION --- */
+
+@media (max-width: 991.98px) {
+  /* Global Resets */
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  .contact-main-title {
-    font-size: 2.5rem;
+
+  /* Navbar Mobile Optimization */
+  .navbar-custom {
+    padding: 10px 0;
+  }
+
+  .navbar-custom .navbar-brand {
+    font-size: 0.85rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 220px;
+  }
+
+  .navbar-brand img {
+    height: 35px;
+  }
+
+  .navbar-custom.scrolled {
+    margin: 5px 10px;
+    width: calc(100% - 20px);
+    border-radius: 25px;
+    padding: 5px 0;
+  }
+
+  /* Hero Section (Home) */
+  .hero {
+    padding: 100px 0 40px 0;
+    min-height: auto;
+    background-attachment: scroll; /* Better for mobile performance */
+  }
+
+  .hero-content-card {
+    padding: 25px 15px;
+    margin: 0 5px 40px 5px;
+    border-radius: 20px;
+  }
+
+  .brand-name {
+    font-size: 2rem !important;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem !important;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  /* Page Hero (Subpages) */
+  .page-hero {
+    height: 30vh;
+    min-height: 250px;
+  }
+
+  .page-hero-title {
+    font-size: 2rem !important;
+  }
+
+  /* Bento Grid - Full Reset */
+  .bento-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+    grid-template-columns: 1fr !important;
+    margin-top: 20px !important;
+  }
+
+  .bento-item {
+    height: 250px !important;
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+
+  /* Milestone Grid */
+  .milestone-grid {
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+  }
+
+  .milestone-item {
+    padding: 15px;
+    text-align: center;
+  }
+
+  /* Timeline - Full Mobile Conversion */
+  .heritage-timeline::before {
+    left: 20px !important;
+  }
+
+  .timeline-item {
+    width: 100% !important;
+    margin-left: 0 !important;
+    padding-left: 50px !important;
+    padding-right: 0 !important;
+    text-align: left !important;
+    margin-bottom: 40px !important;
+  }
+
+  .timeline-item:nth-child(even) {
+    margin-left: 0 !important;
+  }
+
+  .timeline-dot {
+    left: 9px !important;
+    right: auto !important;
+  }
+
+  /* Farshan Bento - Reset */
+  .farshan-bento {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .farshan-text-card {
+    grid-column: span 1 !important;
+    padding: 30px 20px !important;
+    text-align: center !important;
+  }
+
+  .farshan-text-card h2,
+  .farshan-text-card h5,
+  .farshan-text-card p,
+  .farshan-text-card .hero-divider {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .farshan-item {
+    height: 300px !important;
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+
+  /* Press Grid Fix */
+  .press-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  /* Footer Corrections */
+  .footer-custom {
+    padding: 50px 0 30px;
+    text-align: center;
+  }
+
+  .footer-logo img {
+    height: 60px;
+  }
+
+  .footer-custom .justify-content-lg-end {
+    justify-content: center !important;
+    margin-top: 20px;
+  }
+
+  /* Fix for overlapping cards and horizontal scroll */
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .col-lg-6,
+  .col-md-12 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Typography Scale for Smaller Phones */
+@media (max-width: 575px) {
+  .brand-name {
+    font-size: 1.6rem !important;
+  }
+  .section-title {
+    font-size: 1.8rem !important;
+  }
+  .navbar-custom .navbar-brand {
+    font-size: 0.75rem;
+    max-width: 180px;
+  }
+  /* --- ULTRA-RESPONSIVE REFINEMENTS (334px & Below) --- */
+  @media (max-width: 991.98px) {
+    /* Fix Sticky Filters Blocking Content */
+    .menu-filter-wrapper {
+      position: relative !important;
+      top: 0 !important;
+      margin-bottom: 30px !important;
+      background: #fff !important;
+      box-shadow: none !important;
+    }
+
+    /* Increase Subpage Hero Presence - Boosted for Impact */
+    .page-hero {
+      height: 55vh !important;
+      min-height: 450px !important;
+    }
+
+    .page-hero-title {
+      font-size: 2.5rem !important;
+      padding: 0 15px;
+    }
+  }
+
+  @media (max-width: 400px) {
+  /* Stack CTA Buttons Vertically to prevent overflow */
+  .hero-cta-group {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  .hero-btn, .hero-btn-secondary {
+    width: 100% !important;
+    padding: 15px 20px !important;
+    font-size: 0.9rem !important;
+  }
+
+  /* Fix Brand Name Cutoff - Allow Wrapping */
+  .navbar-custom .navbar-brand {
+    font-size: 0.8rem !important;
+    white-space: normal !important;
+    line-height: 1.1 !important;
+    max-width: 180px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .navbar-brand img {
+    height: 30px !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Hero Card Optimization for 334px */
+  .hero-content-card {
+    padding: 25px 15px !important;
+    margin: 0 !important;
+    border-radius: 15px !important;
+    width: 100% !important;
+  }
+
+  /* About Section Empty Space Fix */
+  .about-section {
+    padding: 20px 0 !important;
+  }
+  
+  .about-image-wrapper {
+    min-height: auto !important;
+    padding: 20px 0 !important;
+  }
+
+  .about-content {
+    margin-top: 15px !important;
+  }
+
+  .heritage-info-block {
+    margin-bottom: 20px !important;
+  }
+
+  /* Heritage Image Stacking Fix - FULL WIDTH & TIGHT */
+  .press-cutout-container {
+    max-width: 100% !important;
+    padding: 5px !important;
+    margin: 0 auto !important;
+  }
+
+  .product-cutout-overlay {
+    bottom: -10px !important;
+    right: 5px !important;
+    width: 42% !important;
+    max-width: 150px !important;
+  }
+
+  .experience-tag {
+    right: -5px !important;
+    top: 35% !important;
+    font-size: 0.6rem !important;
+    padding: 3px 8px !important;
+    box-shadow: -5px 5px 15px rgba(0,0,0,0.2) !important;
+  }
+
+    .brand-name {
+      font-size: 1.5rem !important;
+    }
+
+    .hero-description {
+      font-size: 0.85rem !important;
+    }
+
+    /* Global Container Tightening */
+    .container {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
   }
 }
